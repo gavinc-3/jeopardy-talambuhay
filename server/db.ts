@@ -3,18 +3,20 @@ import type { PlayerData, Question } from '$lib/index';
 const playerData: PlayerData[] = [];
 const TIME_LEFT = 8; // seconds
 const sortQuestions = (questions: { points: number; question: string; answer: string; imgSrc?: string; }[]) => questions.sort((a, b) => a.points - b.points).map(q => ({ ...q, answered: false, buzzers: [] as string[] }));
-const pastQuestions: Question[] = sortQuestions([
+const Gavinlife: Question[] = sortQuestions([
     {
         points: 100,
-        question: 'What US state is the Land of Lincoln?',
-        answer: 'Illinois',
+        question: 'How many siblings does Gavin have? (Be extremely specific e.g. 4 older brothers)',
+         imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6lOxfIA3HzoWvUfly0wLALatr7yKiDAc1cA&s" , 
+        answer: '1 twin sister',
     },
     {
         points: 200,
         question:
-            'Which country\'s flag is this?',
-        imgSrc: "https://cdn.britannica.com/34/4034-050-91EE1BCF/Flag-Myanmar.jpg",
-        answer: 'Myanmar',
+            'What is Gavin\'s favorite breed of dog?',
+        imgSrc: "file:///Users/Gavin/Pictures/Photos%20Library.photoslibrary/resources/derivatives/B/B6D6B6E5-7542-4481-B8DD-CA55D226D2C9_1_102_o.jpeg" ,
+        answer: 'Miniature Schnauzer' ,
+
     },
     {
         points: 300,
@@ -29,7 +31,7 @@ const pastQuestions: Question[] = sortQuestions([
     }
 ]);
 
-const presentQuestions: Question[] =
+const Gavinhobby: Question[] =
     sortQuestions([
         {
             points: 200,
@@ -60,7 +62,7 @@ const presentQuestions: Question[] =
             answer: 'Keith Haring',
         }
     ]);
-const futureQuestions: Question[] = sortQuestions([
+const Goals: Question[] = sortQuestions([
     {
         points: 100,
         question:
@@ -74,16 +76,16 @@ const futureQuestions: Question[] = sortQuestions([
 
 const categories = [
     {
-        title: 'My Past',
-        questions: pastQuestions
+        title: 'Gavin\'s Life',
+        questions: Gavinlife
     },
     {
-        title: 'My Present',
-        questions: presentQuestions
+        title: 'Gavin\'s Hobbies',
+        questions: Gavinhobby
     },
     {
-        title: 'My Future',
-        questions: futureQuestions
+        title: 'Goals',
+        questions: Goals
     }
 ];
 
