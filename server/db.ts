@@ -20,8 +20,8 @@ const Gavinpast: Question[] = sortQuestions([
     },
     {
         points: 300,
-        question: 'What',
-        answer: '',
+        question: 'In what country can you find green-bean flavored ice cream?',
+        answer: 'China',
     },
     {
         points: 400,
@@ -33,44 +33,62 @@ const Gavinpast: Question[] = sortQuestions([
 const Gavinpresent: Question[] =
     sortQuestions([
         {
-            points: 200,
-            question:
-                'What kind of rock is this?',
-            imgSrc: 'https://madera.objects.liquidweb.services/photos/16842-half-dome-closeup-from-glacier-point-steve-montalto-hmi-Rectangle-600x400.jpg',
-            answer: 'Granite',
+            points: 100,
+            question: 'What animal is known for its charismatic and friendly nature?',
+            imgSrc: 'https://freestencilgallery.com/wp-content/uploads/2017/04/Pokemon-Growlithe-Silhouette-Stencil-thumb.jpg',
+            answer: 'Dog',
         },
         {
-            points: 100,
+            points: 200,
             question:
-                'What is this Cafe called?',
-            imgSrc: 'https://lh3.googleusercontent.com/p/AF1QipNsmB0ugJeJxYVrBKpRkNkyiEa6cKLamFZ4r0M=s1360-w1360-h1020',
-            answer: 'Chaotic Good',
+                'What is one sport added in the 1900 Olympics that was founded by William Wilson in the mid-19th century?',
+            imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc2WphhkeGdY5rLokRk6cRKAj3QBwDIsF95w&s',
+            answer: 'Waterpolo',
         },
         {
             points: 300,
-            question: 'What programming language is the below code?',
-            imgSrc: '/programming_language.png',
-            answer: 'Javascript',
+            question: 'Rostropovich was a world-famous conductor and virtuoso on what instrument',
+            imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrI9nXMCxeSDBLI-KBVExs92KhPVUwTy0zPA&s',
+            answer: 'Cello',
         },
         {
             points: 400,
             question:
-                'Who painted this?',
+                'What is my favorite type of liquid?',
             imgSrc:
-                "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb1tCOwOdOeYcp5iflCvvW95qCqpmNUo-TMIt3ndxzsxzmgmH18iClIIQLPO48ojPg5Rts2AUm9rZBeVPcjnjrjGaLSzCwbipQotY4EhOk3tUoHJjJyZjTqfY5s9MZ5eSkGrrqmom4JXUdHEqE-Ts8E9i-SuFf9xEukJcFBs5NuOhe6ANdODMFYzyV_Q/s16000/Unfinished.jpg",
-            answer: 'Keith Haring',
+                "data:image/jpeg;base64,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",
+            answer: 'Coconut Water',
         }
     ]);
 const Gavinfuture: Question[] = sortQuestions([
-    {
-        points: 100,
-        question:
-            'This country is home to the Dolomites, which are a mountain range that has historical \'via ferratas\', iron cables and rungs, to aid traversing the peaks?',
-        imgSrc:
-            "https://laguidalpina.it/cdn/shop/products/ferrata-marmolada-cresta-ovest-Cristiano-Gregnanin-Guida-Alpina-Certificata-Dolomiti-5.jpg?v=1738870778",
-        answer: 'Italy',
-
-    }
+     {
+            points: 100,
+            question: 'What type of institution is al-Qarawiyyin, founded in 859 AD in Fez, Morocco?',
+            imgSrc: 'https://idsb.tmgrup.com.tr/ly/uploads/images/2020/06/07/39198.jpg',
+            answer: 'University',
+        },
+        {
+            points: 200,
+            question:
+                'What language is the official language of 21 seperate countries across 3 continents?',
+            imgSrc: 'data:image/jpeg;base64,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',
+            answer: 'Spanish',
+        },
+        {
+            points: 300,
+            question: 'David Geffen Hall is a concert hall at what famous venue?',
+            imgSrc: 'https://newyorkyimby.com/wp-content/uploads/2022/10/2-house-right.jpg',
+            answer: 'Lincoln Center',
+        },
+        {
+            points: 400,
+            question:
+                'what is the solution to 2^20 (mod 15)',
+         
+            answer: '1',
+        }
+    
+    
 ]);
 
 
